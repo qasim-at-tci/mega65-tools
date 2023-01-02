@@ -17,15 +17,6 @@ matrix:
       cache:
         directories:
           - $HOME/Library/Caches/Homebrew
-      addons:
-        homebrew:
-          update: false
-          packages:
-            - libusb
-            - libpng
-            - zlib
-            - cc65
-            - p7zip
       before_script:
         - brew install libusb libpng zlib cc65 p7zip
       script:
