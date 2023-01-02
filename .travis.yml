@@ -58,7 +58,7 @@ matrix:
           condition: $TRAVIS_BRANCH =~ ^(master|refactor_m65)$
     - name: MacOS native compilation
       os: osx
-      osx_image: xcode11
+      osx_image: xcode13.1
       addons:
         homebrew:
           packages:
