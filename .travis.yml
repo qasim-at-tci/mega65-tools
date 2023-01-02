@@ -18,7 +18,7 @@ matrix:
         directories:
           - $HOME/Library/Caches/Homebrew
       before_script:
-        - brew install libusb libpng zlib cc65 p7zip
+        - HOMEBREW_NO_AUTO_UPDATE=1 brew install libusb libpng zlib cc65 p7zip
       script:
       - make USE_LOCAL_CC65=1 arcmac
       before_deploy:
